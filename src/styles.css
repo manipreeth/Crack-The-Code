@@ -1,0 +1,102 @@
+body{
+  box-sizing: border-box;
+  padding:0px;
+  margin:0px;
+  font-family: sans-serif;
+  background-image: linear-gradient(to right,#C0A9FF,#E1A1C4)
+}
+
+/* Display of rules */
+#rulesDisplay{
+  width: 95%;
+  height: fit-content;
+  margin: 15px auto;
+  padding: 7px ;
+  background-color: rgba(240,240,240,0.5);
+  border-radius: 10px;
+  border: 2px solid wheat;
+}
+
+h1{
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  border-top: 5px solid whitesmoke;
+  border-bottom: 5px solid whitesmoke;
+  border-radius: 15px;
+  padding: 8px 1px;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+
+/* Display of the game */
+#display{
+  width: 65%;
+  height: 35%;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right,#FBEE97,#ADEDD5);
+}
+
+.generateButtonDisplay{
+display: none;
+}
+
+/* Numbers entered by user */
+h3{
+  display: inline-block;
+  padding: 8px;
+  margin: 3px;
+  color: white;
+  border-radius: 20%;
+  border: 2px solid whitesmoke;
+}
+
+.userInputDisplayActive{
+  width: fit-content;
+  height: fit-content;
+  margin: 20px auto 5px;
+}
+
+.userInputDisplayNotActive{
+  display: none;
+}
+
+.digitIncluded{
+  background-color: orange;
+}
+
+.digitNotIncluded{
+  background-color: red;
+}
+
+#digitMatched{
+  background-color: green;
+}
+
+button{
+  margin: 3px;
+}
+
+#checkbutton{
+  background-image: linear-gradient(to right,#71C5EE,#025091);
+}
+
+#pointsGained{
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 20px;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+
+@media screen and (min-width: 801px){
+  #display{
+    margin: 5% auto;
+  }
+}
