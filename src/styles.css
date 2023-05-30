@@ -42,10 +42,6 @@ li{
   background-image: linear-gradient(to right,#FBEE97,#ADEDD5);
 }
 
-.generateButtonDisplay{
-display: none;
-}
-
 /* Numbers entered by user */
 h3{
   display: inline-block;
@@ -97,6 +93,16 @@ button{
 
 @media screen and (min-width: 801px){
   #display{
-    margin: 5% auto;
+    width: 45%;
   }
+}
+
+/* remove default view of input type number */
+/* Set styles for input type=number */
+/* These styles only work in WebKit-based browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* remove the default spin button */
+
+  margin: 0; /* remove margin */
 }
